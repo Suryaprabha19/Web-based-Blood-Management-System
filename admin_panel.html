@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Donors</title>
+    <link rel="stylesheet" href="admin_style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="header">
+    <nav>
+        <h1 id="h">Blood Bank and Donation</h1>
+        <ul>
+            <a href="About Us.html"><li>About Us |</li></a>
+            <a href="Why To Donate Blood.html"><li>Why To Donate Blood |</li></a>
+            <a href="Need Blood.html"><li>Need blood |</li></a>
+            <a href="Became A Donor.html" target="_blank"><li>Became A Donor |</li></a>
+            <a href="admin_panel.html"><li>Admin Panel</li></a>
+        </ul>
+    </nav>
+</div>
+
+<h1 class="admin-title">Admin Panel - Manage Donors</h1>
+
+<!-- Search for Donors -->
+<form method="POST" action="search_donors.php">
+    <label for="blood_group">Choose Blood Group:</label>
+    <select name="blood_group">
+        <option value="">All</option>
+        <option value="A+">A+</option>
+        <option value="B+">B+</option>
+        <option value="O+">O+</option>
+        <option value="AB+">AB+</option>
+        <option value="A-">A-</option>
+        <option value="B-">B-</option>
+        <option value="O-">O-</option>
+        <option value="AB-">AB-</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
+
+<!-- Display Donors Table -->
+<h2>All Donors</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Blood Group</th>
+        <th>Address</th>
+        <th>Actions</th>
+    </tr>
+
+    <!-- Donor records will be displayed here from PHP -->
+</table>
+
+</body>
+</html>

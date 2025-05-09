@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Navigation */
+#header {
+    background-color: #d50000;
+    padding: 15px 0;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+}
+
+#header nav h1 {
+    font-size: 24px;
+}
+
+#header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#header nav ul a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#header nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Title */
+.admin-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Search Form */
+form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+form label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form select {
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 7px 14px;
+    font-size: 16px;
+    background-color: #d50000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #b71c1c;
+}
+
+/* Donor Table */
+table {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #f44336;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ffeaea;
+}
+
+/* Action Links */
+table a {
+    color: #d50000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}

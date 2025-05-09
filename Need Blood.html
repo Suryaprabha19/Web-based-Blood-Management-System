@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Need Blood</title>
+        <link rel="icon" href="icon2.jpg">
+        <link rel="stylesheet" href="need_blood.css">
+    </head>
+    <body>
+        <style>
+            h1 {
+                margin-top: 100px;
+            }
+        </style>
+
+        <div class="header">
+            <nav class="header1">
+                <h1>Blood Bank and Donation</h1>
+                <ul>
+                    <a href="About Us.html"><li>About Us |</li></a>
+                    <a href="Why To Donate Blood.html"><li>Why To Donate Blood |</li></a>
+                    <a href="Need Blood.html"><li>Need blood |</li></a>
+                    <a href="Became A Donor.html" target="_blank"><li>Became A Donor |</li></a>
+                    <a href="admin_login.php"><li>Admin Panel</li></a>
+                </ul>
+            </nav>
+        </div>
+
+        <center>
+            <form id="c" method="POST" action="need_blood.php">
+                <h1 class="style">Need Blood</h1>
+                <table>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td>
+                            <select name="blood_group" required>
+                                <option value="">Select</option>
+                                <option>A+</option>
+                                <option>B+</option>
+                                <option>O+</option>
+                                <option>AB+</option>
+                                <option>A-</option>
+                                <option>B-</option>
+                                <option>O-</option>
+                                <option>AB-</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Reason Why You Need Blood?</td>
+                        <td><input type="text" name="reason" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><br>
+                            <input type="submit" value="Submit Request">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>    
+    </body>
+</html>
